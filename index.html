@@ -558,23 +558,24 @@
 
         <div class="subscribe-container">
           <p class="subscribe-container-text">Subscribe</p>
-          <input
-            class="subscribe-container-input"
-            id="subscribe-text"
-            name="subscribe-text"
-            type="text"
-            required
-            placeholder="E-mail"
-          />
-        </div>
+          <form class="subscribe-form">
+            <label>
+              <input
+                class="subscribe-container-input"
+                id="subscribe-text"
+                name="subscribe-text"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
 
-        <div>
-          <button type="button" class="subscribe-container-button">
-            Subscribe
-            <svg class="modal-btn-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-Frame-3"></use>
-            </svg>
-          </button>
+            <button type="submit" class="subscribe-container-btn">
+              Subscribe
+              <svg class="subscribe-container-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -583,13 +584,11 @@
     <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button">
-          <svg class="modal-btn-icon" width="24" height="24">
+          <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-title section-title">
-          Leave your contacts and we will call you back
-        </p>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
             <label class="modal-label" for="user-name">Name</label>
@@ -601,7 +600,7 @@
                 type="text"
                 required
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
             </div>
@@ -616,7 +615,7 @@
                 type="tel"
                 required
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </div>
@@ -631,18 +630,18 @@
                 type="email"
                 required
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
             </div>
           </div>
 
-          <div class="modal-field">
-            <label class="modal-label" for="user-text">Comment</label>
+          <div class="modal-field-textarea">
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               class="modal-textarea"
-              id="user-text"
-              name="user-text"
+              id="user-comment"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
