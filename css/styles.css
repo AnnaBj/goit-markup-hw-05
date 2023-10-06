@@ -674,6 +674,10 @@ nav a {
   fill: #4d5ae5;
 }
 
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+
 .modal-form-btn {
   min-width: 169px;
   padding: 16px 32px;
