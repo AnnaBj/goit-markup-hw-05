@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 p,
 h1,
 h2,
@@ -12,21 +13,26 @@ h5,
 h6 {
   margin: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
+
 img {
   display: block;
   max-width: 100%;
   object-fit: cover;
 }
+
 /*============ Body ============ */
 body {
   font-family: "Roboto", sans-serif;
@@ -56,6 +62,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /*============ Navigation logo ============ */
 .logo {
   font-family: "Raleway", sans-serif;
@@ -71,6 +78,7 @@ body {
 .studio {
   color: #2e2f42;
 }
+
 /*============ Navigation meny ============ */
 .header-navigation {
   border-bottom: 1px solid #e7e9fc;
@@ -87,9 +95,11 @@ nav ul {
   padding: 0;
   display: flex;
 }
+
 nav li {
   list-style: none;
 }
+
 nav a {
   text-decoration: none;
 }
@@ -144,6 +154,7 @@ nav a {
 .menu-link:focus {
   color: #404bbf;
 }
+
 /*============ Contacts ============ */
 .contacts {
   font-style: normal;
@@ -172,6 +183,7 @@ nav a {
 .contacts-list-link:focus {
   color: #404bbf;
 }
+
 /*============ Header1 ============ */
 .main-title {
   color: #fff;
@@ -207,11 +219,13 @@ nav a {
   margin-top: 32px;
   margin-bottom: 8px;
 }
+
 .section-text {
   font-size: 16px;
   letter-spacing: 0.02em;
   margin-bottom: 32px;
 }
+
 .page-nav .link:hover {
   color: #18ffff;
 }
@@ -258,6 +272,7 @@ nav a {
 .hero-bottom-btn:focus {
   background-color: #404bbf;
 }
+
 /*============ Feature ============ */
 
 .feature {
@@ -568,6 +583,7 @@ nav a {
 .subscribe-container-btn-icon {
   margin-left: 16px;
 }
+
 /*============ Backdrop ============ */
 
 .backdrop {
@@ -642,27 +658,26 @@ nav a {
 }
 
 .modal-title {
+  width: 360px;
+  height: 24px;
   color: #2e2f42;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02rem;
-  width: 100%;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 
 .modal-input {
-  width: 100%;
+  width: 360px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
   padding-left: 38px;
-  margin-bottom: 26px;
   display: flex;
-  width: 360px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -670,7 +685,7 @@ nav a {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus .modal-icon {
+.modal-input:focus + .modal-icon {
   fill: #4d5ae5;
 }
 
@@ -705,15 +720,15 @@ nav a {
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.04em;
 }
 
 .modal-icon {
   position: absolute;
-  fill: transparent;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -773,7 +788,7 @@ nav a {
   letter-spacing: 0.04em;
 }
 
-.label-span {
+.label-check-span {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -781,10 +796,9 @@ nav a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
   margin-right: 8px;
 }
 
@@ -794,24 +808,25 @@ nav a {
   line-height: 16px;
   letter-spacing: 0.48px;
   text-decoration-line: underline;
+  cursor: pointer;
 }
 
-.label-svg {
-  stroke-width: 1px;
-  stroke: rgba(46, 47, 66, 0.4);
+.label-check-icon {
+  fill: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-svg:hover {
+.label-check-icon:hover {
   fill: #404bbf;
   stroke-width: 1px;
   stroke: #404bbf;
 }
 
-.check input:checked + .label-check .label-span {
+.modal-check:checked + .label-check > .label-check-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-  display: inline-flex;
+  cursor: pointer;
 }
 
 .label-privacy {
